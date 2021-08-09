@@ -1,17 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Welcome</h1>
+  <DataTable>
+  </DataTable>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DataTable from "./components/DataTable.vue"
 
-export default {
+export default{
   name: 'App',
   components: {
-    HelloWorld
+      DataTable
+  },
+  data(){
+    return {
+       columnsa: [
+          {name: "id_bot", th: "ID"},
+          {name: "bot_name", th: "Nome"},
+          {name: "bot_description", th: "Descrizione"}
+        ],
+        items: [
+          {name: "id_bot", th: "ID"},
+          {name: "bot_name", th: "Nome"},
+          {name: "bot_description", th: "Descrizione"}
+        ]
+    }
+  },
+  props:{
+    columns: {
+        type: Array,
+        default: () => []
+    }
   }
 }
 </script>
@@ -23,6 +44,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
