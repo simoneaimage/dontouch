@@ -6,19 +6,10 @@ yarn install
 ```
 
 ### Compiles and hot-reloads for development
+The poject run on localhost:8080
+
 ```
 yarn serve
 ```
+Enjoy!
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
