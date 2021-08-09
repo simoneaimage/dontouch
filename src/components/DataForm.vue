@@ -19,7 +19,7 @@
 
         <label class="mr-sm-3  mb-sm-2" for="example-datepicker">Date</label>
         <b-form-datepicker id="example-datepicker" v-model="updaterow.date" class="mb-2 mr-sm-3 mb-sm-2"></b-form-datepicker>
-
+        
         <label class="mr-sm-3  mb-sm-2" for="example-timepicker">Time</label>
         <b-form-timepicker class="mr-sm-1  mb-sm-2" id='example-timepicker' v-model="updaterow.time"></b-form-timepicker>
 
@@ -104,6 +104,10 @@ export default {
                     this.$parent.roll(newraw,true);
                 }
                
+            }else{
+                this.$parent.alert.visible=true;
+                this.$parent.alert.message= "ATTENZIONE! Compila tutti i campi prima di inviare";
+                this.$parent.alert.color="danger"
             }
         }
     }
