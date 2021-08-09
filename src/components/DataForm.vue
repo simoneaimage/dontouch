@@ -19,7 +19,9 @@
 
         <label class="mr-sm-3  mb-sm-2" for="example-datepicker">Date</label>
         <b-form-datepicker id="example-datepicker" v-model="updaterow.date" class="mb-2 mr-sm-3 mb-sm-2"></b-form-datepicker>
-        
+        </b-form>
+
+        <b-form inline class="mb-2">
         <label class="mr-sm-3  mb-sm-2" for="example-timepicker">Time</label>
         <b-form-timepicker class="mr-sm-1  mb-sm-2" id='example-timepicker' v-model="updaterow.time"></b-form-timepicker>
 
@@ -31,8 +33,8 @@
 
         <b-button variant="primary" class="mr-sm-3 mb-sm-2" @click="save">Save</b-button>
         <b-button  variant="warning" class="mr-sm-3 mb-sm-2" @click="back">Back</b-button>
-
-    </b-form>
+        </b-form>
+    
     </div>
 </template>
 
