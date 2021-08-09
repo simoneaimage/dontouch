@@ -53,9 +53,9 @@
       return {
         ids: [],
         alert: {
-          visible: true,
-          message:"Dio",
-          color: "primary"
+          visible: false,
+          message:"",
+          color: ""
         },
         formvisible: false,
         updaterow: false,
