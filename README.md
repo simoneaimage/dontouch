@@ -6,10 +6,11 @@ yarn install
 ```
 
 ### Compiles and hot-reloads for development
-The poject run on localhost:8080
 
 ```
 yarn serve
 ```
+The poject running on http://localhost:8080/
+
 Enjoy!
 
